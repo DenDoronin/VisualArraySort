@@ -1,5 +1,7 @@
 # VisualArraySort
 
+![1](https://cloud.githubusercontent.com/assets/3168299/25677936/9f97e0e2-3050-11e7-8573-1b1b5a88d93d.png)
+
 ## Environment
 
 Developed on:
@@ -32,6 +34,8 @@ Fill grid with values and press 'Sort Array'
 
 Please, look into commits page for detailed history.
 
+<img width="1005" alt="screen shot 2017-05-03 at 10 36 10 pm" src="https://cloud.githubusercontent.com/assets/3168299/25678025/fa4a821a-3050-11e7-8335-030d30172b55.png">
+
 ## Technical notes
 
 Demo covered the following topics:
@@ -40,3 +44,5 @@ Demo covered the following topics:
 2. Autolayout (Storyboard)
 3. Animations
 4. Unit Testing
+
+<img width="260" alt="3" src="https://cloud.githubusercontent.com/assets/3168299/25677965/bff37ec8-3050-11e7-8439-4b6891ef0149.png">
