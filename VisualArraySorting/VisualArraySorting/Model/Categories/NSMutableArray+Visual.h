@@ -13,6 +13,11 @@
 
 @property (nonatomic,strong) DORArrayVisualizer *arrayVisualizer;
 
+/**
+ * Sorts array add asks arrayVisualizer to animate swap operations
+ *
+ * @param cmptr NSComparator instance for element ordering
+ */
 - (void) visualSortedArrayUsingComparator:(NSComparator NS_NOESCAPE)cmptr;
 
 @end
