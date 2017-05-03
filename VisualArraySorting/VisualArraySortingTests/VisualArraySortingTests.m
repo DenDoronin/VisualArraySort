@@ -61,6 +61,9 @@
     [array visualSortedArrayUsingComparator:^NSComparisonResult(NSNumber*  _Nonnull obj1, NSNumber*  _Nonnull obj2) {
         return [obj1 compare:obj2];
     }];
+    
+    XCTAssertTrue([array[0] integerValue] == 10);
+
 }
 
 @end
