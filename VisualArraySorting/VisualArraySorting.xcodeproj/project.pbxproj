@@ -15,7 +15,18 @@
 		811A63811EBA55C700161B37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 811A637F1EBA55C700161B37 /* LaunchScreen.storyboard */; };
 		811A63901EBA585600161B37 /* NSMutableArray +Visual.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A638E1EBA585600161B37 /* NSMutableArray +Visual.m */; };
 		811A63941EBA58AE00161B37 /* DORArrayVisualizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A63931EBA58AE00161B37 /* DORArrayVisualizer.m */; };
+		811A639C1EBA64CC00161B37 /* VisualArraySortingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A639B1EBA64CC00161B37 /* VisualArraySortingTests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		811A639E1EBA64CC00161B37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 811A63661EBA55C700161B37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 811A636D1EBA55C700161B37;
+			remoteInfo = VisualArraySorting;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		811A636E1EBA55C700161B37 /* VisualArraySorting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualArraySorting.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,10 +43,20 @@
 		811A638F1EBA585600161B37 /* NSMutableArray+Visual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Visual.h"; sourceTree = "<group>"; };
 		811A63921EBA58AE00161B37 /* DORArrayVisualizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DORArrayVisualizer.h; sourceTree = "<group>"; };
 		811A63931EBA58AE00161B37 /* DORArrayVisualizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DORArrayVisualizer.m; sourceTree = "<group>"; };
+		811A63991EBA64CC00161B37 /* VisualArraySortingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisualArraySortingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		811A639B1EBA64CC00161B37 /* VisualArraySortingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VisualArraySortingTests.m; sourceTree = "<group>"; };
+		811A639D1EBA64CC00161B37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		811A636B1EBA55C700161B37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		811A63961EBA64CC00161B37 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				811A63701EBA55C700161B37 /* VisualArraySorting */,
+				811A639A1EBA64CC00161B37 /* VisualArraySortingTests */,
 				811A636F1EBA55C700161B37 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				811A636E1EBA55C700161B37 /* VisualArraySorting.app */,
+				811A63991EBA64CC00161B37 /* VisualArraySortingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,6 +136,15 @@
 			path = Visualizers;
 			sourceTree = "<group>";
 		};
+		811A639A1EBA64CC00161B37 /* VisualArraySortingTests */ = {
+			isa = PBXGroup;
+			children = (
+				811A639B1EBA64CC00161B37 /* VisualArraySortingTests.m */,
+				811A639D1EBA64CC00161B37 /* Info.plist */,
+			);
+			path = VisualArraySortingTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,6 +165,24 @@
 			productReference = 811A636E1EBA55C700161B37 /* VisualArraySorting.app */;
 			productType = "com.apple.product-type.application";
 		};
+		811A63981EBA64CC00161B37 /* VisualArraySortingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 811A63A01EBA64CC00161B37 /* Build configuration list for PBXNativeTarget "VisualArraySortingTests" */;
+			buildPhases = (
+				811A63951EBA64CC00161B37 /* Sources */,
+				811A63961EBA64CC00161B37 /* Frameworks */,
+				811A63971EBA64CC00161B37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				811A639F1EBA64CC00161B37 /* PBXTargetDependency */,
+			);
+			name = VisualArraySortingTests;
+			productName = VisualArraySortingTests;
+			productReference = 811A63991EBA64CC00161B37 /* VisualArraySortingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -145,6 +195,11 @@
 					811A636D1EBA55C700161B37 = {
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
+					};
+					811A63981EBA64CC00161B37 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 811A636D1EBA55C700161B37;
 					};
 				};
 			};
@@ -162,6 +217,7 @@
 			projectRoot = "";
 			targets = (
 				811A636D1EBA55C700161B37 /* VisualArraySorting */,
+				811A63981EBA64CC00161B37 /* VisualArraySortingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -174,6 +230,13 @@
 				811A63811EBA55C700161B37 /* LaunchScreen.storyboard in Resources */,
 				811A637E1EBA55C700161B37 /* Assets.xcassets in Resources */,
 				811A637C1EBA55C700161B37 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		811A63971EBA64CC00161B37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,7 +255,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		811A63951EBA64CC00161B37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				811A639C1EBA64CC00161B37 /* VisualArraySortingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		811A639F1EBA64CC00161B37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 811A636D1EBA55C700161B37 /* VisualArraySorting */;
+			targetProxy = 811A639E1EBA64CC00161B37 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		811A637A1EBA55C700161B37 /* Main.storyboard */ = {
@@ -328,6 +407,30 @@
 			};
 			name = Release;
 		};
+		811A63A11EBA64CC00161B37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VisualArraySortingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DOR.VisualArraySortingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VisualArraySorting.app/VisualArraySorting";
+			};
+			name = Debug;
+		};
+		811A63A21EBA64CC00161B37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VisualArraySortingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DOR.VisualArraySortingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VisualArraySorting.app/VisualArraySorting";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -345,6 +448,14 @@
 			buildConfigurations = (
 				811A63861EBA55C700161B37 /* Debug */,
 				811A63871EBA55C700161B37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		811A63A01EBA64CC00161B37 /* Build configuration list for PBXNativeTarget "VisualArraySortingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				811A63A11EBA64CC00161B37 /* Debug */,
+				811A63A21EBA64CC00161B37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
