@@ -13,6 +13,8 @@
 		811A637C1EBA55C700161B37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 811A637A1EBA55C700161B37 /* Main.storyboard */; };
 		811A637E1EBA55C700161B37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 811A637D1EBA55C700161B37 /* Assets.xcassets */; };
 		811A63811EBA55C700161B37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 811A637F1EBA55C700161B37 /* LaunchScreen.storyboard */; };
+		811A63901EBA585600161B37 /* NSMutableArray +Visual.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A638E1EBA585600161B37 /* NSMutableArray +Visual.m */; };
+		811A63941EBA58AE00161B37 /* DORArrayVisualizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A63931EBA58AE00161B37 /* DORArrayVisualizer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		811A637D1EBA55C700161B37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		811A63801EBA55C700161B37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		811A63821EBA55C700161B37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		811A638E1EBA585600161B37 /* NSMutableArray +Visual.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray +Visual.m"; sourceTree = "<group>"; };
+		811A638F1EBA585600161B37 /* NSMutableArray+Visual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Visual.h"; sourceTree = "<group>"; };
+		811A63921EBA58AE00161B37 /* DORArrayVisualizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DORArrayVisualizer.h; sourceTree = "<group>"; };
+		811A63931EBA58AE00161B37 /* DORArrayVisualizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DORArrayVisualizer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		811A63701EBA55C700161B37 /* VisualArraySorting */ = {
 			isa = PBXGroup;
 			children = (
+				811A638C1EBA585600161B37 /* Model */,
 				811A63741EBA55C700161B37 /* AppDelegate.h */,
 				811A63751EBA55C700161B37 /* AppDelegate.m */,
 				811A63771EBA55C700161B37 /* ViewController.h */,
@@ -77,6 +84,33 @@
 				811A63721EBA55C700161B37 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		811A638C1EBA585600161B37 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				811A63911EBA58AE00161B37 /* Visualizers */,
+				811A638D1EBA585600161B37 /* Categories */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		811A638D1EBA585600161B37 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				811A638F1EBA585600161B37 /* NSMutableArray+Visual.h */,
+				811A638E1EBA585600161B37 /* NSMutableArray +Visual.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		811A63911EBA58AE00161B37 /* Visualizers */ = {
+			isa = PBXGroup;
+			children = (
+				811A63921EBA58AE00161B37 /* DORArrayVisualizer.h */,
+				811A63931EBA58AE00161B37 /* DORArrayVisualizer.m */,
+			);
+			path = Visualizers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				811A63901EBA585600161B37 /* NSMutableArray +Visual.m in Sources */,
 				811A63791EBA55C700161B37 /* ViewController.m in Sources */,
 				811A63761EBA55C700161B37 /* AppDelegate.m in Sources */,
 				811A63731EBA55C700161B37 /* main.m in Sources */,
+				811A63941EBA58AE00161B37 /* DORArrayVisualizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
